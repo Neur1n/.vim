@@ -8,4 +8,3 @@
 | ├─ **syntax**/     | *tut.vim*     | `syntax` tut(orial), which is used in my notes of [ROS tutorials](https://github.com/Neur1n/ROS_Tutorials) |
 | ├─ *filetype.vim*  |               | 1. add "au BufRead,BufNewFile *.tut setf tut" on line 2637 to make tut.vim work |
 | ├─ *vimrc*         |              | |
-| └─ *.netrwhist*    |              | |
