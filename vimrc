@@ -1,5 +1,5 @@
-source $VIMRUNTIME/mswin.vim
-behave mswin
+"source $VIMRUNTIME/mswin.vim
+"behave mswin
 " All system-wide defaults are set in $VIMRUNTIME/debian.vim and sourced by
 " the call to :runtime you can find below.  If you wish to change any of those
 " settings, you should do it in this file (/etc/vim/vimrc), since debian.vim
@@ -89,8 +89,8 @@ set expandtab shiftwidth=4 softtabstop=4            "| set <Tab> width to be 4 <
 "set shiftwidth=4 tabstop=4                          "| set <Tab> width to be 4 <space>s: with hard tab
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " formatting
-autocmd BufNewFile,BufRead * setl fo-=ro            "| turn off automatic insertion of comment characters
-autocmd BufNewFile,BufRead * setl fo+=j             "| remove a comment leader when joining lines (shift+j)
+autocmd FileType * set fo-=ro                       "| turn off automatic insertion of comment characters
+autocmd FileType * set fo+=j                        "| remove a comment leader when joining lines (shift+j)
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " backup and swap
 set backup
@@ -155,5 +155,5 @@ com -nargs=0 UnsetSession :let g:SessionFileName = ""
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " plugins
 call plug#begin()
-"Plug 'powerline/powerline'
+Plug 'wting/gitsessions.vim'                        "| make sessions
 call plug#end()

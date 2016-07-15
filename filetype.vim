@@ -2634,7 +2634,8 @@ au BufNewFile,BufRead zsh*,zlog*		call s:StarSetf('zsh')
 " Plain text files, needs to be far down to not override others.  This avoids
 " the "conf" type being used if there is a line starting with '#'.
 au BufNewFile,BufRead *.txt,*.text		setf text
-au BufRead,BufNewFile *.tut setf tut
+au BufRead,BufNewFile *.tut                     setf tut
+au BufRead,BufNewFile *.bug                     setf bug
 
 
 " Use the filetype detect plugins.  They may overrule any of the previously
