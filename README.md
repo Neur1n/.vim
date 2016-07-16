@@ -2,7 +2,8 @@
 
 | ~/.vim/            | | |
 | :--- | --- | --- |
-| ├─ **autoload**/   | *plug.vim*    | `plugin manager` [Vim-plug](https://github.com/junegunn/vim-plug)                 |
+| ├─ **autoload**/   | *plug.vim*      | `plugin manager` [Vim-plug](https://github.com/junegunn/vim-plug)                 |
+|                    | **vim-session** | `plugin' [vim-misc](https://github.com/xolox/vim-misc)                 |
 | ├─ **colors**/     | *monokai.vim* | `colorscheme` [monokai](https://github.com/sickill/vim-monoka)                    |
 |                    | *tender.vim*  | `colorscheme` [tender](https://github.com/jacoborus/tender.vim)                   |
 | ├─ **syntax**/     | *tut.vim*     | `syntax` tut(orial), which is used in my notes of [ROS tutorials](https://github.com/Neur1n/ROS_Tutorials) |
