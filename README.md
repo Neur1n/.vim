@@ -3,7 +3,7 @@
 | ~/.vim/            | | |
 | :--- | --- | --- |
 | ├─ **autoload**/   | *plug.vim*      | `plugin` [Vim-plug](https://github.com/junegunn/vim-plug) -- plugin manager                       |
-| ├─ **plugged **/   | **vim-session** | `plugin` [vim-session](https://github.com/xolox/vim-session)                                      |
+| ├─ **plugged**/    | **vim-session** | `plugin` [vim-session](https://github.com/xolox/vim-session)                                      |
 |                    | **vim-misc**    | `plugin` [vim-misc](https://github.com/xolox/vim-misc) -- vim-session dependency                  |
 | ├─ **colors**/     | *monokai.vim*   | `colorscheme` [monokai](https://github.com/sickill/vim-monoka)                                    |
 |                    | *tender.vim*    | `colorscheme` [tender](https://github.com/jacoborus/tender.vim)                                   |
