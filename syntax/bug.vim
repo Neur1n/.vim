@@ -1,5 +1,5 @@
 " Vim syntax file
-" Language:	bug records
+" Language:	bug logging
 " Maintainer:	Jihang Li <LeeJihg@gmail.com>
 " Last Change:	2016 July 15
 
