@@ -74,8 +74,8 @@ set guifont=Ubuntu\ Mono\ 13                        "| set default font
 set number                                          "| show line number
 set relativenumber                                  "| relative line number
 set colorcolumn=80                                  "| show right margin
-"au InsertLeave * hi StatusLine ctermfg=231 ctermbg=241 cterm=bold guifg=#f8f8f2 guibg=#64645e gui=bold
-"au InsertEnter * hi StatusLine ctermfg=235 ctermbg=112 cterm=bold guifg=#262626 guibg=#87af00 gui=bold
+au InsertLeave * hi StatusLine ctermfg=231 ctermbg=241 cterm=bold guifg=#f8f8f2 guibg=#64645e gui=bold
+au InsertEnter * hi StatusLine ctermfg=235 ctermbg=112 cterm=bold guifg=#262626 guibg=#87af00 gui=bold
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " splitting
 set splitright
@@ -113,11 +113,45 @@ nmap <CR> o<Esc>
 autocmd BufEnter * silent! lcd %:p:h                "| auto cd to pwd
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " abbreviations
-ab //= //=============================================================================
-ab #= #===============================================================================
-ab #- #--------------------------------------------------------------------------
-ab b* *******************************************************************************
+:abbreviate //= //=============================================================================
+:abbreviate #= #===============================================================================
+:abbreviate #- #--------------------------------------------------------------------------
 """""""""""""""""""""""""""""""""""""""""""""""""""""
+" session
+"au VimLeave * call VimLeave()
+"au VimEnter * call VimEnter()
+"let g:PathToSessions = $HOME . "/Documents/vim_recovery/session"
+"
+"function! VimEnter()
+"  if argc() == 0
+"    " gvim started with no files
+"    if has("browse") == 1
+"      let g:SessionFileName = browse(0, "Select Session", g:PathToSessions, g:PathToSessions . "/LastSession.vim")
+"      if g:SessionFileName != ""
+"        exe "source " . g:SessionFileName
+"      endif
+"    else
+"      " For non-gui vim
+"      let LoadLastSession = confirm("Restore last session?", "&Yes\n&No")
+"      if LoadLastSession == 1
+"        exe "source " . g:PathToSessions . "/LastSession.vim"
+"      endif
+"    endif
+"  endif
+"endfunction
+"
+"function! VimLeave()
+"  exe "mksession! " . g:PathToSessions . "/LastSession.vim"
+"  if exists("g:SessionFileName") == 1
+"    if g:SessionFileName != ""
+"      exe "mksession! " . g:SessionFileName
+"    endif
+"  endif
+"endfunction
+"" A command for setting the session name
+"com -nargs=1 SetSession :let g:SessionFileName = g:PathToSessions . "/" . "<args>" . ".vim"
+"" .. and a command to unset it
+"com -nargs=0 UnsetSession :let g:SessionFileName = ""
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " plugins
 call plug#begin()

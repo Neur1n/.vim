@@ -12,13 +12,13 @@ endif
 " Tags
 syn keyword tutTag ERROR NOTE TODO
 syn keyword tutTag contained
-hi tutTag guifg=#272822 guibg=#FFA500 gui=bold
+hi tutTag guifg=#262626 guibg=#FFAF00 gui=bold
 hi tutTag ctermfg=235 ctermbg=214 cterm=bold
 
 " Highlighting HTTP links
 syn keyword tutHttp http https
 syn keyword tutHttp contained
-hi tutHttp guifg=#272822 guibg=#87CEFA gui=bold 
+hi tutHttp guifg=#262626 guibg=#00D7FF gui=bold 
 hi tutHttp ctermfg=235 ctermbg=45 cterm=bold
 
 "=============================================================================== match
