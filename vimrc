@@ -74,8 +74,8 @@ set guifont=Ubuntu\ Mono\ 13                        "| set default font
 set number                                          "| show line number
 set relativenumber                                  "| relative line number
 set colorcolumn=80                                  "| show right margin
-"au InsertLeave * hi StatusLine ctermfg=231 ctermbg=241 cterm=bold guifg=#f8f8f2 guibg=#64645e gui=bold
-"au InsertEnter * hi StatusLine ctermfg=235 ctermbg=112 cterm=bold guifg=#262626 guibg=#87af00 gui=bold
+au InsertLeave * hi StatusLine ctermfg=231 ctermbg=241 cterm=bold guifg=#f8f8f2 guibg=#64645e gui=bold
+au InsertEnter * hi StatusLine ctermfg=235 ctermbg=112 cterm=bold guifg=#262626 guibg=#87af00 gui=bold
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " splitting
 set splitright
@@ -100,6 +100,9 @@ let g:netrw_winsize=15                              "| set explorer window width
 let g:netrw_liststyle=3                             "| set explorer to be tree style
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " key mapping
+" remap F1 to esc, also need to disable F1 of gnome terminal manually
+map <F1> <Esc>
+imap <F1> <Esc>
 " toggle search highlighting on/off
 noremap <F4> :set hlsearch! hlsearch?<CR>
 " toggle spellcheck
