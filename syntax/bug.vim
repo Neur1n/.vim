@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:	bug logging
 " Maintainer:	Jihang Li <LeeJihg@gmail.com>
-" Last Change:	2016 July 15
+" Last Change:	2016 July 22
 
 " Quit when a (custom) syntax file was already loaded
 if exists("b:current_syntax")
@@ -45,9 +45,9 @@ hi bugTitle guifg=#262626 guibg=#5F87D7 gui=bold
 hi bugTitle ctermfg=235 ctermbg=68 cterm=bold
 
 " Bug Date & Location
-" {blue text, italic if in gui}
+" {blue text}
 syn match bugLocation /^\<\(date\|library\|software\|hardware\)\>\s/
-hi bugLocation guifg=#00D7FF gui=italic
+hi bugLocation guifg=#00D7FF
 hi bugLocation ctermfg=45
 
 " Block
