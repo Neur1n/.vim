@@ -60,11 +60,11 @@ if has('gui_running')
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "Only for GVim
 set lines=999 columns=999                           "| initial window size
-"nnoremap <C-F1> :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
-"nnoremap <C-F2> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
+nnoremap <C-F2> :if &go=~#'L'<Bar>set go-=L<Bar>else<Bar>set go+=L<Bar>endif<CR>
+nnoremap <C-F3> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
 set go-=T                                           "| remove toolbar
-set go-=L                                           "| remove left scroll bar
-set go-=r                                           "| remove right scroll bar
+"set go-=L                                           "| remove left scroll bar
+"set go-=r                                           "| remove right scroll bar
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 endif
 
