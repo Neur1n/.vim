@@ -70,6 +70,9 @@ endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " UI
+set fileencodings=utf-8,gbk,gb2312,gb18030          "| show chinese characters
+set termencoding=utf-8
+set encoding=prc
 set guifont=Ubuntu\ Mono\ 13                        "| set default font
 set cursorline                                      "| highlight current line
 set number                                          "| show line number
