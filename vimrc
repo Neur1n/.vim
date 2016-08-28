@@ -96,7 +96,7 @@ autocmd FileType * set fo+=j                        "| remove a comment leader w
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " backup and swap
 set backup
-set dir=~/Documents/vim_recovery/swap               "| setup a swap file folder
+"set dir=~/Documents/vim_recovery/swap               "| setup a swap file folder
 set backupdir=~/Documents/vim_recovery/backup       "| setup a backup file folder
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " netrw settings
@@ -130,10 +130,11 @@ ab b* **************************************************************************
 call plug#begin()
 Plug 'xolox/vim-session'                            "| session manager
 Plug 'xolox/vim-misc'                               "| vim-session dependency
+Plug 'vim-latex/vim-latex'                           "| latex suite
 call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " plugin configurations
 " -- xolox/vim-session --
-let g:session_directory = '~/Documents/vim_recovery/session'
+let g:session_directory='~/Documents/vim_recovery/session'
 let g:session_autosave='no'
 let g:session_autoload='no'
