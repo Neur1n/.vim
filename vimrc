@@ -130,7 +130,7 @@ ab b* **************************************************************************
 call plug#begin()
 Plug 'xolox/vim-session'                            "| session manager
 Plug 'xolox/vim-misc'                               "| vim-session dependency
-Plug 'vim-latex/vim-latex'                           "| latex suite
+Plug 'vim-latex/vim-latex'                          "| latex suite
 call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " plugin configurations
