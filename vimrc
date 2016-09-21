@@ -74,7 +74,7 @@ set fileencodings=utf-8,gbk,gb2312,gb18030          "| show chinese characters
 set termencoding=utf-8
 set encoding=prc
 set guifont=Ubuntu\ Mono\ 13                        "| set default font
-set cursorline                                      "| highlight current line
+"set cursorline                                      "| highlight current line
 set number                                          "| show line number
 set relativenumber                                  "| relative line number
 set colorcolumn=80                                  "| show right margin
